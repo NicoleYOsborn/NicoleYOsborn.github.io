@@ -1,0 +1,45 @@
+// Navigation Styles here
+
+header {
+    width: 100%;
+    border-bottom: @navigation-border;
+
+    @media @iphone{
+        text-align: center;
+    }
+
+    .logo {
+        font-family: 'Lobster Two', cursive;
+    }
+
+    nav {
+        .flexin(row, space-between, center);
+        margin: 20px 0;
+        padding: 2% 1%;
+        color: @primary;
+        div{
+            width: 75%;
+
+            @media @iphone{
+                width: 100%;
+            }
+        }
+       
+        @media @iphone{
+            .flexin(column, center, center);
+            .logo{
+                text-align: center;
+                color: @primary_dark;
+            }
+        }
+        .navLinks {
+            .flexin(row, space-around, center);
+            font-size: 1.6rem;
+            a{
+            width: 300px;
+            text-decoration: none;
+            color: @primary;}
+        }
+    }
+
+}
