@@ -280,9 +280,13 @@ header nav .dropdown-content a {
 header nav .dropdown-content a:hover {
   background-color: #D6EDF3;
 }
+.about {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(232, 176, 213, 0.5) 68.23%, rgba(232, 176, 213, 0) 100%);
+}
 .about img {
   border-radius: 50px;
   padding: 20px;
+  width: 50%;
 }
 .contact {
   display: flex;
