@@ -21,12 +21,33 @@
     <header>
         <nav class="container">
             <div class="logo">
-                <h1>NO</h1>
+                <h1><a href="index.html">NO</a></h1>
             </div>
             <div class="navLinks">
-                <a href="#contact">Contact</a>
                 <a href="about.html">About Me</a>
-                <a href="#projects">Projects</a>
+                <div class="dropdown">
+                    <a onmouseover="seeContacts()" class="dropmenu">Contact</a>
+
+                    <div id="contactMenu" class="dropdown-content">
+                        <a class="dropitem" href="mailto: nicole.y.osborn@gmail.com">Email Me</a>
+                        <a class="dropitem" href="www.linkedin.com/in/nicoleyosborn">LinkedIn</a>
+                        <a class="dropitem" href="https://github.com/NicoleYOsborn">GitHub Profile</a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="dropdown">
+                    <a onmouseover="seeProjects()" class="dropmenu">Projects</a>
+
+                    <div id="projectMenu" class="dropdown-content proj">
+                        <a class="dropitem" href="sleep_tracker.html">Sleep Tracker</a>
+                        <a class="dropitem" href="quest.html">Quest for the Best</a>
+                        <a class="dropitem" href="lambda_mobile.html">Lambda Mobile</a>
+                        <a class="dropitem" href="how-to.html">How-To</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -35,6 +56,36 @@
         <h1>Nicole Osborn</h1>
         <h2>UX Engineer</h2>
         <p>I am a UX Designer and Frontend Web Developer passionate about solving problems through research.</p>
+    </section>
+    <section class="projectPreviews">
+        <div class="preview blue-bg">
+            <h2>Quest for the Best</h2>
+
+            <p>Designing a chat feature to help users to plan adventures with their friends and stay more engaged with their community.</p>
+            <img src="images/QuestGroupImage.png" />
+
+        </div>
+
+        <div class="preview pink-bg">
+            <h2>Lambda Mobile</h2>
+
+            <p>Designing a mobile version of the Lambda dashboard, allowing students to check their progress, follow current events, view their training kit to prepare for assignments, and more, even when away from their desks!</p>
+            <img src="images/LambdaGroupImage.png" />
+
+        </div>
+
+        <div class="preview blue-bg">
+            <h2>How-To</h2>
+
+            <p>Allowing users to easily find and create How-To tutorials and share with a community of do-it-yourselfers. Available on desktop and mobile!</p>
+            <img src="images/HowToGroupImage.png" />
+
+        </div>
+    </section>
+    <section class="contact">
+        <p>Want to know more? Let’s talk!</p>
+        <a href="mailto: nicole.y.osborn@gmail.com">nicole.y.osborn@gmail.com</a>
+        <a href="www.linkedin.com/in/nicoleyosborn">LinkedIn</a>
     </section>
 </body>
 

@@ -193,6 +193,10 @@ header {
 header .logo {
   font-family: 'Lobster Two', cursive;
 }
+header .logo a {
+  text-decoration: none;
+  color: #631D4B;
+}
 header nav {
   display: flex;
   flex-direction: row;
@@ -294,4 +298,34 @@ header nav .dropdown-content a:hover {
   font-size: 1.6rem;
   padding-bottom: 10px;
   font-style: italic;
+}
+.projectPreviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1440px;
+  height: auto;
+  left: 0px;
+  top: 368px;
+  padding: 4%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(172, 218, 232, 0.5) 73.96%, rgba(159, 209, 223, 0) 100%);
+}
+.blue-bg {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(172, 218, 232, 0.5) 73.96%, rgba(159, 209, 223, 0) 100%);
+}
+.pink-bg {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(232, 176, 213, 0.5) 68.23%, rgba(232, 176, 213, 0) 100%);
+}
+.previewContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
