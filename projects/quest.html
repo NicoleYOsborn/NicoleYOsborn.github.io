@@ -1,0 +1,163 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Nicole Osborn Portfolio</title>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&display=swap" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1><a href="../index.html">NO</a></h1>
+            </div>
+            <div class="navLinks">
+                <a href="../about.html">About Me</a>
+                <div class="dropdown">
+                    <a onmouseover="seeContacts()" class="dropmenu">Contact</a>
+
+                    <div id="contactMenu" class="dropdown-content">
+                        <a class="dropitem" href="mailto: nicole.y.osborn@gmail.com">Email Me</a>
+                        <a class="dropitem" href="www.linkedin.com/in/nicoleyosborn">LinkedIn</a>
+                        <a class="dropitem" href="https://github.com/NicoleYOsborn">GitHub Profile</a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="dropdown">
+                    <a onmouseover="seeProjects()" class="dropmenu">Projects</a>
+
+                    <div id="projectMenu" class="dropdown-content proj">
+
+                        <a class="dropitem" href="quest.html">Quest for the Best</a>
+                        <a class="dropitem" href="lambda_mobile.html">Lambda Mobile</a>
+                        <a class="dropitem" href="how-to.html">How-To</a>
+                        <a class="dropitem" href="code-projects.html">From Design to Code</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="caseStudy content">
+        <h1>Quest for the Best</h1>
+        <div class="intro">
+            <h4><strong>Motivating users to get out of the house and have adventures!</strong></h4>
+            <img src="../images/QuestPhoneImage.png" alt="image of mobile phone with a chat screen" />
+        </div>
+        <p>This was a school assignment and it was a <strong>one week solo project.</strong> </p>
+        <p><strong>The premise</strong> - Quest for the Best is a mobile app that encourages people to get out more by
+            having them create a “Quest” and a group of their friends can choose to participate in the quest by going to
+            activities/events/restaurants and rating their experience.</p>
+        <p><strong>The problem </strong>- my goal was to create an in-app chat for the project, as well as a way to
+            document past quests.
+        </p>
+
+        <h4><strong>How might we use a chat feature to improve the experience of this app?</strong></h4>
+        <p><strong>Insights</strong> - I wanted to know why someone would want to use an in-app chat feature rather than
+            communicating through existing channels. My conclusion, based on input from the Stakeholder Interview and
+            Competitive Analysis, was that it would be a chat that is specifically created for the quest and would be a
+            great way to coordinate outings with friends who are also completing the quest. So I decided to design the
+            chats as quest specific chat rooms.</p>
+
+        <h4><strong>Ideation</strong></h4>
+        <div class="intro">
+            <figure>
+                <img src="../images/Crazy8s 1.png" alt="a piece of paper with multiple sketches of user interfaces" />
+                <figcaption>I used the <strong>"Crazy 8s" </strong>technique to brainstorm 8 possible layouts in 8
+                    minutes.</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/SolutionSketchStoryboard 1.png"
+                    alt="a piece of paper with a sketch of a user storyboard">
+                <figcaption><strong>Storyboard</strong> sketch of all screens needed for the chat feature.</figcaption>
+            </figure>
+        </div>
+        <div class="intro">
+            <figure>
+                <img src="../images/QuestUserFlowMap 1.png"
+                    alt="a flow map showing the user flow from User Page -> Message Listing -> Quest specific chat">
+                <figcaption><strong>Site Maps and User Flows</strong> like this one helped me to understand how the chat
+                    feature fits in to the user's experience.</figcaption>
+            </figure>
+            <p class="snippet">With only a week to implement the feature, I spent the first day brainstorming and
+                planning. I wanted to focus on answering the question of how to enrich the Quest experience with the
+                chat feature. Once I had a storyboard, I was ready to move on to <strong>Wireframing!</strong></p>
+        </div>
+
+        <h4><strong>User Testing with Low Fidelity Prototype</strong></h4>
+        <figure>
+            <img src="../images/heatmaps.png" alt="three screens of user interfaces with heatmap of user clicks">
+            <figcaption>Wire-frames were created using <strong>Figma</strong>. User testing was conducted using
+                <strong>Optimal Workshop</strong>.</figcaption>
+        </figure>
+        <p>One of the challenges of conducting a solo UX project is finding willing participants for user testing! I was
+            able to recruite 11 people by soliciting to classmates, friends and family to do a quick usability study. I
+            used a "first click" test on my early wireframes to verify that users found it intuitive to navigate the
+            chat feature. With a whopping <strong>90% success rate</strong>, I felt confident in the design, and moved
+            on to creating a <strong>High Fidelity</strong> mockup.</p>
+
+        <h4><strong>Design System and High Fidelity Prototype</strong></h4>
+
+        <div class="intro">
+            <p class="snippet">In order to choose the <strong>color palette</strong>, I revisited color theory. This app should be funand exciting, and I found the colors that signify fun (yellows and oranges) and novelty (purple) wouldbe good for this app. I used the tool colorizer.org to find a complementary pair. I started out using ashade of yellow with purple, but did not like how it looked. So I played with the purple shade and founda complementary orange color that looked nice and decided to use those to create the color palette. </p>
+
+            <figure>
+                <img src="../images/ColorPalette 1.png" alt="Image shows a color palette of shades of purple, orange, and grayscale."/>
+            </figure>        
+        </div>
+        <p>Using <strong>atomic design theory</strong> I set about creating reusable components and set up a <strong>high fidelity prototype</strong> in figma, which could be used in <strong>live user testing.</strong></p>
+        <figure>
+            <img src="../images/ProrotypeImage 1.png" alt="Image shows four screens of a prototype with arrows denoting results of user actions"/>
+        </figure>
+
+        <h4><strong>Verifying Results</strong></h4>
+        <div class="intro">
+            <figure>
+                <img src="../images/usertesting.png" alt="Image of woman looking at smartphone">
+                <figcaption><span>Photo by <a href="https://unsplash.com/@epicantus?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Daria Nepriakhina</a> on <a href="https://unsplash.com/s/photos/woman-with-phone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></figcaption>
+            </figure>
+            <p class="snippet">I completed live user testing with two people. I had users attempt these tasks - locating the chats, finding new messages, and looking at completed quests. They had no problems accomplishing these tasks and expressed that they would enjoy an app like this!</p>
+        </div>
+        <p>Having validated my design choices with user testing, I went back to carefully cleaning up the design adjusting margins to make sure things lined up well. <strong>Here is the final product!</strong></p>
+        </p>
+        <div class="intro">
+            <figure>
+                <img src="../images/Quest1.png" alt="Image of home screen with Active Quests selected">
+            </figure>
+            <figure>
+                <img src="../images/Quest2.png" alt="Image of home screen with Completed Quests selected">
+            </figure>
+            <figure>
+                <img src="../images/Quest3.png" alt="Image of Quest Chats screen, showing unread and read chat threads">
+            </figure>
+            <figure>
+                <img src="../images/Quest4.png" alt="Image of chat screen with chat messages">
+            </figure>
+        </div>
+        <h4><strong>Reflection</strong></h4>
+        <p>This quick solo project was a great experience, allowing me to gain confidence in my UX process and UI skills. Through user research, I found that an app like "Quest for the Best" would find significant market demand. I would enjoy working on the full app to meet that demand! </p>
+
+    </section>
+    <section class="contact">
+        <p>Want to know more? Let’s talk!</p>
+        <a href="mailto: nicole.y.osborn@gmail.com">nicole.y.osborn@gmail.com</a>
+        <a href="www.linkedin.com/in/nicoleyosborn">LinkedIn</a>
+    </section>
+</body>
+
+</html>
