@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Nicole Osborn Portfolio</title>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&display=swap" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1><a href="../index.html">NO</a></h1>
+            </div>
+            <div class="navLinks">
+                <a href="../about.html">About Me</a>
+                <div class="dropdown">
+                    <a onmouseover="seeContacts()" class="dropmenu">Contact</a>
+
+                    <div id="contactMenu" class="dropdown-content">
+                        <a class="dropitem" href="mailto: nicole.y.osborn@gmail.com">Email Me</a>
+                        <a class="dropitem" href="www.linkedin.com/in/nicoleyosborn">LinkedIn</a>
+                        <a class="dropitem" href="https://github.com/NicoleYOsborn">GitHub Profile</a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="dropdown">
+                    <a onmouseover="seeProjects()" class="dropmenu">Projects</a>
+
+                    <div id="projectMenu" class="dropdown-content proj">
+
+                        <a class="dropitem" href="quest.html">Quest for the Best</a>
+                        <a class="dropitem" href="lambda_mobile.html">Lambda Mobile</a>
+                        <a class="dropitem" href="how-to.html">How-To</a>
+                        <a class="dropitem" href="code-projects.html">From Design to Code</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="caseStudy content">
+        <h1>Lambda Mobile</h1>
+        <div class="row">
+            <h4><strong>Allowing students a consistent experience across devices!</strong></h4>
+            <img src="../images/LambdaMobilePhoneImage.png" alt="image of mobile phone with a Lambda School student dashboard interface" />
+        </div>
+        <p>This was a school assignment and it was a <strong>one month team project.</strong> I worked with three other UX designers, Andrew Hagen, Cody Fink, and Andre Orellana. </p>
+        <p><strong>The premise</strong> - Lambda School does not have a mobile student dashboard, making it difficult for students to access their training kit materials or view their grades and progress if they are away from their desktop computer.</p>
+        <p><strong>The problem </strong>- our goal is to create a version of the student dashboard which is optimized for mobile, while providing a consistent experience with the desktop version.</p>
+
+        <h4><strong>How might we meet the needs of Lambda School students when they are away from their desks?</strong></h4>
+        <p><strong>Insights</strong> - We wanted to understand which features of the student dashboard are most important to Lambda School students, and how a mobile version would best serve their needs. I set up and conducted an interview with Ben, a student int he Full Stack Web track at Lambda, while a team mate, Cody, interviewed another UX student. </p>
+        <p>Based on early interviews, students normally only visit the dashboard to view their progress after a Sprint Challenge.The things students would find most useful on a moble app are:</p>
+        <ul>
+            <li>Access to current Training Kit lesson and materials</li>
+            <li>Feedback on the most recent Sprint Challenge</li>
+            <li>Staying up to date with the latest announcements</li>
+            <li>The shedule for that night's class</li>
+        </ul>
+
+        <figure>
+            <img src="../images/UserJourneyCropped.png" alt="User Journey Map showing a users actions and emotions while using the app">
+            <figcaption>My teammates and I used <strong>Milanote</strong> to work colaboratively on multiple user flows.</figcaption>
+        </figure>
+
+        <h4><strong>Ideation</strong></h4>
+        <div class="row">
+            <figure>
+                <img src="../images/solutionsketch.png" alt="a piece of paper with multiple sketches of user interfaces" />
+                <figcaption>I focused my sketches on the main dashboard. My idea for the progress circle was selected for use in the app!</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/styleguide.png"
+                    alt="image includes a color palette, Lambda logos, and a text scale">
+                <figcaption>I used Lambda's style guide for the main website and chose colors and logos for use in our mobile app, making them available to the team in Figma.</figcaption>
+            </figure>
+        </div>
+        <p>We each contributed sketches for the user interface, and our team lead evaluated them and chose which elements should be included in the next phase of our design. Other elements that were selected included a tiered dashboard with the latest notifications, top and bottom navigation modeled after iOS, and a settings feature to toggle dashboard elements.</p> <p> The team decided to assign rolls to help things move smoothly. I chose to be the <strong>asset collector.</strong> It was my responsibility to collect or create icons, logos, and images, as well as preparing the style guide.</p>
+
+        <h4><strong>User Testing with Low Fidelity Prototype</strong></h4>
+        <figure>
+            <img src="../images/LambdaWireframes.png" alt="wireframes of mobile user interfaces">
+            <figcaption>Wire-frames were created using <strong>Figma</strong>.</figcaption>
+        </figure>
+        <p>As luck would have it, Cody was planning to attend a local meetup with other Lambda students on the weekend after we completed our wireframes of the design! There were seven other current or past Lambda students at the event, and Cody was able to give a hands-on demonstration using Figma's presentation mode. They approved of the overall design, including the <strong>progress circle</strong> on the dashboard. They suggested an interactive calendar that would allow students to input their own events an study scheduels.</p>
+
+        <h4><strong>Oh no! Problems Identified</strong></h4>
+
+        <div class="row">
+            <p class="snippet">We used Optimal Workshop to create some <strong>first click tests</strong>, and the results raised some serious red flags! Only 50% of users were able to accurately access grades and feedback or get information about that night's lesson!</p>
+
+            <figure>
+                <img src="../images/OWsuccessPieChart.png" alt="Image shows a pie chart with 50% success rate for the first-click test"/>
+            </figure>        
+        </div>
+        <p>Users had trouble understanding the meanings of the icons on the bottom navigation. I redesigned the icons to include text labels to eliminate confusion. Another problem area was confusion on how to open sections of the dashboard. Andre jumped in here and included toggling arrows. </strong></p>
+        <figure>
+            <img src="../images/iterations.png" alt="Image shows navigation bar before and after adding text labels"/>
+        </figure>
+
+        <h4><strong>Verifying Results</strong></h4>
+        <p>Once we had completed the final iteration, correcting for the issues found in earlier testing, we presented the app to one of the students who had evaluated the wireframe mock-up, and he was impressed! The user appreciated the design, especially the option to turn off social media updates, as he had no interest in those. He liked the progress indicator and was impressed by our bonus feature - adding a <strong>dark mode!</strong> </p>
+        <p>Our team lead evaluated our high fidelity mock-up, giving it a big thumbs up! <strong>Here is the final product!</strong></p>
+        </p>
+        <div class="row">            
+            <figure>
+                <img src="../images/HiFiDashboard.png" alt="Image of Student Dashboard screen on a phone">
+            </figure>            
+            <figure>
+                <img src="../images/HiFiProgress.png" alt="Image of progress screen on a phone">
+            </figure>
+            <figure>
+                <img src="../images/HiFiTrainingKit.png" alt="Image of Training Kit screen on a phone">
+            </figure>
+
+            <figure>
+                <img src="../images/HiFiCalendar.png" alt="Image of Calendar screen on a phone">
+            </figure>
+
+        </div>
+        <h4><strong>Reflection</strong></h4>
+        <p>Working with a team of UX Designers was a great experience! I was amazed at how much we could accomplish by working together to brainstorm and delegating tasks for UI implementation. Creating a mobile version of the Lambda student dashboard was especially engaging, as we could imediately see the value that this could bring to the student experience. Hopefully Lambda will put some of our design insignts to use!</p>
+
+    </section>
+    <section class="contact">
+        <p>Want to know more? Let’s talk!</p>
+        <a href="mailto: nicole.y.osborn@gmail.com">nicole.y.osborn@gmail.com</a>
+        <a href="www.linkedin.com/in/nicoleyosborn">LinkedIn</a>
+    </section>
+</body>
+
+</html>
