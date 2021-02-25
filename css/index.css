@@ -196,6 +196,9 @@ img {
   max-width: 800px;
   width: 100%;
 }
+.content img {
+  padding: 20px;
+}
 strong {
   font-weight: bolder;
 }
@@ -205,6 +208,13 @@ ul {
   line-height: 1.5;
   font-size: 2rem;
   padding-bottom: 10px;
+}
+#codeImg {
+  border-radius: 12px;
+}
+#LILogo {
+  max-height: 20px;
+  width: auto;
 }
 header {
   width: 100%;
@@ -311,7 +321,7 @@ header nav .dropdown-content a:hover {
 .about img {
   border-radius: 50px;
   padding: 20px;
-  width: 50%;
+  width: 20%;
 }
 .contact {
   display: flex;
@@ -377,6 +387,9 @@ figure figcaption {
   font-size: 1.5rem;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
+}
+figure figcaption a {
+  color: blue;
 }
 .snippet {
   max-width: 50%;

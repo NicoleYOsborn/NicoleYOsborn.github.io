@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Nicole Osborn Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&display=swap" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1><a href="../index.html">NO</a></h1>
+            </div>
+            <div class="navLinks">
+                <a href="../about.html">About Me</a>
+                <div class="dropdown">
+                    <a onmouseover="seeContacts()" class="dropmenu">Contact</a>
+
+                    <div id="contactMenu" class="dropdown-content">
+                        <a class="dropitem" href="mailto: nicole.y.osborn@gmail.com">Email Me</a>
+                        <a class="dropitem" href="www.linkedin.com/in/nicoleyosborn">LinkedIn</a>
+                        <a class="dropitem" href="https://github.com/NicoleYOsborn">GitHub Profile</a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="dropdown">
+                    <a onmouseover="seeProjects()" class="dropmenu">Projects</a>
+
+                    <div id="projectMenu" class="dropdown-content proj">
+
+                        <a class="dropitem" href="quest.html">Quest for the Best</a>
+                        <a class="dropitem" href="lambda_mobile.html">Lambda Mobile</a>
+                        <!-- <a class="dropitem" href="how-to.html">How-To</a> -->
+                        <a class="dropitem" href="code_projects.html">From Design to Code</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>From Design to Code</h1>
+        <img src="../images/How-ToMonitor.png">
+        <h2>How-To</h2>
+        <h4><strong>Allowing users to easily find and create How-To tutorials and share with a community of do-it-yourselfers. Available on desktop and mobile!</strong></h4>
+        <p>I completed the UX design for the How-To app for desktop and mobile during my UX track at Lambda School. I was later able to work on a team of 5 developers to create and deploy the application. My role as a front end developer was to duplicate the marketing page of my Figma prototype using HTML and CSS code.</p>
+
+        <div class="row">
+            <figure>
+                <img src="../images/HowToHomePage.png" alt="Image of High Fidelity mock up of How-To marketing page">
+                <figcaption>The marketing page of my High Fidelity prototype for the How-To app in Figma</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/HowToScreenshot.png" alt="Screenshot of Deployed How-To marketing page">
+                <figcaption>Screenshot of the Deployed marketing page. You can find the deployed site <a href="https://pensive-dijkstra-46aa57.netlify.app/">here</a> and the GitHub repository <a href="https://github.com/BuildWeek-HowTo-2/FrontEnd">here.</a></figcaption>
+            </figure>
+        </div>
+
+        <h2>Sleep Tracker</h2>
+        <h4><strong>A web application that allows users to track the time they went to sleep and the time they woke up and their subsequent mood each day. The app will then recommend an ideal amount of sleep for the individual user!</strong></h4>
+        <p>The sleep tracker UX Design work was completed by Joseph Young, another UX developer at Lambda School. For this project, I worked as a React Developer with a team of two other developers. Along with implementing the registration and authentication for users, I used Styled Components to style the entire app based on Joseph's high fidelity mock-up.</p>
+
+        <div class="row">
+            <figure>
+                <img src="../images/SleepTrackerSignUpFigma.png" alt="Image of High Fidelity mock up of Sleep Tracker registration page">
+                <figcaption>The registration page of the High Fidelity prototype for the Sleep Tracker app in Figma, by Joseph Young.</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/SleepTrackerSignUpScreenshot.png" alt="Screenshot of Deployed Sleep Tracker registration page">
+                <figcaption>Screenshot of the Deployed registration page. You can find the deployed site <a href="https://sleep-tracker-final.now.sh/signup">here</a> and the GitHub repository <a href="https://github.com/Build-Week-Sleep-Tracker-V/Front-End">here.</a></figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="contact">
+        <p>Want to know more? Let’s talk!</p>
+        <a href="mailto: nicole.y.osborn@gmail.com">nicole.y.osborn@gmail.com</a>
+        <a href="www.linkedin.com/in/nicoleyosborn"><img id="LILogo" src="../images/LI-Logo.png"></a>
+    </section>
+</body>
+
+</html>
