@@ -32,19 +32,31 @@ h2 {
   font-size: 3rem;
   color: @primary_dark;
   padding: 10px;
+
+  @media @iphone {
+    font-size: 2.5rem;
+}
 }
 
 h4 {
   font-size: 2.5rem;
   padding-bottom: 4%;
   padding-top: 4%;
-}
+
+  @media @iphone {
+    font-size: 2rem;
+
+  }  }
 
 p {
   font-family: "Mulish", sans-serif;
   line-height: 1.5;
   font-size: 2rem;
   padding-bottom: 10px;
+
+  @media @iphone {
+    font-size: 1.6rem;
+}
 }
 
 img {
@@ -89,6 +101,11 @@ ul {
   line-height: 1.5;
   font-size: 2rem;
   padding-bottom: 10px;
+
+  @media @iphone {
+    font-size: 1.6rem;
+    padding: 10px;
+  }
 
 }
 #codeImg {

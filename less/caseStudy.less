@@ -4,6 +4,13 @@
     text-align: center;
     max-width: 800px;
     width: 100%;
+
+    @media @iphone{
+        flex-direction: column;
+        img{
+            order: 2;
+        }
+    }
 }
 
 figure{
@@ -19,10 +26,18 @@ figure{
             color: blue;
         }
     }
+
+    @media @iphone {
+        max-width: 100%;
+    }
 }
 .snippet{
     max-width: 50%;
     margin: 20px;
     text-align: left;
+
+    @media @iphone {
+        max-width: 100%;
+    }
 }
 

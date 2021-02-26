@@ -156,16 +156,31 @@ h2 {
   color: #631D4B;
   padding: 10px;
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
 h4 {
   font-size: 2.5rem;
   padding-bottom: 4%;
   padding-top: 4%;
+}
+@media (max-width: 500px) {
+  h4 {
+    font-size: 2rem;
+  }
 }
 p {
   font-family: "Mulish", sans-serif;
   line-height: 1.5;
   font-size: 2rem;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.6rem;
+  }
 }
 img {
   max-width: 100%;
@@ -210,6 +225,12 @@ ul {
   font-size: 2rem;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  ul {
+    font-size: 1.6rem;
+    padding: 10px;
+  }
+}
 #codeImg {
   border-radius: 12px;
 }
@@ -232,6 +253,11 @@ header .logo {
 header .logo a {
   text-decoration: none;
   color: #631D4B;
+}
+@media (max-width: 500px) {
+  header .logo {
+    width: 100%;
+  }
 }
 header nav {
   display: flex;
@@ -316,6 +342,11 @@ header nav .dropdown-content a {
 header nav .dropdown-content a:hover {
   background-color: #D6EDF3;
 }
+@media (max-width: 500px) {
+  header .projectPreviews {
+    width: 100%;
+  }
+}
 .about {
   background: radial-gradient(50% 50% at 50% 50%, rgba(232, 176, 213, 0.5) 68.23%, rgba(232, 176, 213, 0) 100%);
 }
@@ -350,20 +381,27 @@ header nav .dropdown-content a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 1440px;
   height: auto;
   left: 0px;
   top: 368px;
   padding: 4%;
+}
+@media (max-width: 500px) {
+  .preview {
+    max-width: 100vh;
+  }
+  .preview img {
+    width: 250px;
+    height: auto;
+  }
+}
+.preview .blue-bg {
   background: radial-gradient(50% 50% at 50% 50%, rgba(172, 218, 232, 0.5) 73.96%, rgba(159, 209, 223, 0) 100%);
 }
-.blue-bg {
-  background: radial-gradient(50% 50% at 50% 50%, rgba(172, 218, 232, 0.5) 73.96%, rgba(159, 209, 223, 0) 100%);
-}
-.pink-bg {
+.preview .pink-bg {
   background: radial-gradient(50% 50% at 50% 50%, rgba(232, 176, 213, 0.5) 68.23%, rgba(232, 176, 213, 0) 100%);
 }
-.previewContent {
+.preview .previewContent {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -379,6 +417,14 @@ header nav .dropdown-content a:hover {
   max-width: 800px;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
+  .row img {
+    order: 2;
+  }
+}
 figure {
   max-width: 65%;
   height: auto;
@@ -392,8 +438,18 @@ figure figcaption {
 figure figcaption a {
   color: blue;
 }
+@media (max-width: 500px) {
+  figure {
+    max-width: 100%;
+  }
+}
 .snippet {
   max-width: 50%;
   margin: 20px;
   text-align: left;
+}
+@media (max-width: 500px) {
+  .snippet {
+    max-width: 100%;
+  }
 }
