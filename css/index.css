@@ -381,6 +381,7 @@ header nav .dropdown-content a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
   height: auto;
   left: 0px;
   top: 368px;
@@ -395,17 +396,17 @@ header nav .dropdown-content a:hover {
     height: auto;
   }
 }
-.preview .blue-bg {
-  background: radial-gradient(50% 50% at 50% 50%, rgba(172, 218, 232, 0.5) 73.96%, rgba(159, 209, 223, 0) 100%);
-}
-.preview .pink-bg {
-  background: radial-gradient(50% 50% at 50% 50%, rgba(232, 176, 213, 0.5) 68.23%, rgba(232, 176, 213, 0) 100%);
-}
 .preview .previewContent {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.blue-bg {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(172, 218, 232, 0.5) 73.96%, rgba(159, 209, 223, 0) 100%);
+}
+.pink-bg {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(232, 176, 213, 0.5) 68.23%, rgba(232, 176, 213, 0) 100%);
 }
 .row {
   display: flex;
