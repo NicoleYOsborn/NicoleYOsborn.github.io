@@ -176,6 +176,8 @@ p {
   line-height: 1.5;
   font-size: 2rem;
   padding-bottom: 10px;
+  max-width: 100%;
+  margin: 0px 20px;
 }
 @media (max-width: 500px) {
   p {
