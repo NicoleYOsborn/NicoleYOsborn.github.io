@@ -1,0 +1,10 @@
+
+{
+    "scripts": {
+    "compile less" : "lessc less/index.less css/index.css"
+    },
+    "devDependencies": {
+    "less": "^3.13.1",
+    "lessc": "^1.0.2"
+    }
+    }
