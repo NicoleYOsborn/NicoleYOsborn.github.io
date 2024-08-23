@@ -1,0 +1,257 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+    <title>Nicole Osborn Portfolio</title>
+
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link href="../css/index.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1><a href="../index.html">NYO</a></h1>
+            </div>
+            <div class="navLinks">
+                <a href="../about.html">About Me</a>
+                <div class="dropdown">
+                    <a class="dropmenu">Contact</a>
+
+                    <div id="contactMenu"
+                        class="dropdown-content">
+
+                        <a class="dropitem"
+                            href="mailto:nicole.y.osborn@gmail.com">Email Me</a>
+                        <a class="dropitem"
+                            href="https://www.linkedin.com/in/nicoleyosborn/">LinkedIn</a>
+                        <a class="dropitem"
+                            href="https://github.com/NicoleYOsborn">GitHub Profile</a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="dropdown">
+                    <a class="dropmenu">Projects</a>
+
+                    <div id="projectMenu"
+                        class="dropdown-content proj">
+                        <a class="dropitem"
+                            href="enrollment_dashboard.html">Primavera Online</a>
+                        <a class="dropitem"
+                            href="openbook.html">openbook</a>
+                        <a class="dropitem"
+                            href="quest.html">Quest for the Best</a>
+                        <a class="dropitem"
+                            href="lambda_mobile.html">Lambda Mobile</a>
+                        <!-- <a class="dropitem" href="how-to.html">How-To</a> -->
+                        <a class="dropitem"
+                            href="code_projects.html">From Design to Code</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="caseStudy content">
+        <h1>Primavera Online</h1>
+        <div class="row">
+            <h4><strong>Strengthening the brand and improving customer retention by taking ownership of the Enrollment Management system!</strong></h4>
+
+        </div>
+        <p>This was a multi-month epic, and I was the sole UX Engineer working with a Project Manager and a team of Software developers to create a new Enrollment Management system for StrongMind, a leading Education Technology provider, <strong>saving the company $120,000 annually.</strong> </p>
+
+        <p>After implementing the new enrollment application for returning students in 2024, the student retention rate increased from <strong>46.79% in 2023 to 61.44%</strong>, exceeding the initial goal of 56.79% by an additional 5%</p>
+
+        <p>We worked closely with our largest client, Primavera Online, throughout the discovery, design, and implementation stages.</p>
+        <figure>
+            <img src="../images/Reenrollmentflow1.jpg"
+                alt="whiteboard user flow" />
+            <figcaption>UX Designers and the product team began by sketching the current user flow on the whiteboard.</figcaption>
+        </figure>
+        <p></p>
+
+        <p><strong>The problem</strong> - The main challenge is the cumbersome and inefficient enrollment process for new students/guardians, which creates operational difficulties for enrollment teams at online K-12 schools. The need for account creation, the repetitive task of filling out information, and the overall arduous and time-consuming nature of the application process contribute to the friction experienced by students and guardians in expressing interest and applying.
+        </p>
+        <p><strong>The premise </strong>- The goal is to simplify and enhance the enrollment experience, creating a seamless process for students, guardians, and enrollment teams by directly addressing these pain points.
+        </p>
+
+        <h4><strong>How does the enrollment experience at our main competitors compare?</strong></h4>
+        <p>Taylor, the Product Owner, and I started with some competitive analysis. We each picked two competing online charter schools in Arizona and went through the online enrollment and registration process recording our findings.
+        </p>
+        <figure>
+            <img src="../images/ASUDocspage.png"
+                alt="webpage with many document upload fields" />
+            <figcaption>One of the schools that I used for competitive analysis was ASU Preperatory Academy</figcaption>
+        </figure>
+        <p><strong>Strengths - What did they do well?</strong>- Mobile friendly interface, most information that was on the interest form is pre-filled out in the application</p>
+        <p><strong>Weaknesses - What did they not do well?</strong>- There was no indication of how long the application would be or progress indicators. No setting expectations of the many documents required - After a lengthy process I landed on a page that required the upload of 11 different documents in order to continue!
+        </p>
+        <figure>
+            <img src="../images/ASUError.png"
+                alt="webpage with an error message that a check box is required" />
+            <figcaption>One frustrating experience I encountered was a page that gave me an error when I attempted to move on, and I found the required acknowledgement hidden in an accordion element that was very text heavy.</figcaption>
+        </figure>
+
+
+        <h4><strong>Ideation</strong></h4>
+
+        <p>One of the main issues when we began the project was that people were filling out a “slim form”, (which we have since renamed as “interest form”) on the marketing website, and then being directed to a Powerschool application where they would need to create an account and fill out the same information that they just filled out in the interest form.</p>
+
+        <p>The data from the slim form was collected in a spreadsheet and never heard from again</p>
+
+        <div class="row">
+            <figure>
+                <img src="../images/SlimFormUserFlow.png"
+                    alt="User Flow Chart showing the guardian's experience from Marketing page to starting class." />
+                <figcaption>The goal was to simplify and enhance the enrollment experience, creating a seamless process for students, guardians, and enrollment teams by directly addressing these pain points.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../images/InformationArchitecture.png"
+                    alt="Flow chart showing the pages and features of the enrollment app." />
+                <figcaption>Planning out the information architecture of the application helps to understand how users will interact with the product.
+                </figcaption>
+            </figure>
+        </div>
+
+        <h4><strong>Sketches and Wireframes</strong></h4>
+        <p>We held a design session with Product owners, Engineers, and Designers to ideate on the UI for the guardian dashboard, where parents would be able to manage in-progress enrollment applications.</p>
+        <p>We each sketched out our ideas and then used Dot Voting to identify features that we were interested in bringing into our next phase - digital mockups.
+        </p>
+        <div class="row">
+            <figure>
+                <img src="../images/dotvoting.jpg"
+                    alt="Paper wireframes of dashboard" />
+            </figure>
+            <figure>
+                <img src="../images/dotvoting2.jpg"
+                    alt="Flow chart showing the pages and features of the enrollment app." />
+            </figure>
+        </div>
+
+        <h4><strong>How can we make a good first impression on potential enrollees?</strong></h4>
+        <p>While testing out the current experience for guardians, I completed the slim form myself and received the initial email. I immediately suggested that we redesign the email and sent a quick mockup to the product manager.</p>
+
+        <p>The first email had many opportunities for improvement.</p>
+        <ul>
+            <li>Overwhelming amount of textual information</li>
+            <li>Sent from Powerschool rather than the school itself</li>
+            <li>No clear action for next steps</li>
+            <li>Not mobile friendly</li>
+        </ul>
+        <figure>
+            <img src="../images/currentemail.png"
+                alt="Flow chart showing the pages and features of the enrollment app." />
+        </figure>
+
+        <p>The proposed new design addresses these concerns with:</p>
+        <ul>
+            <li>Mobile first design</li>
+            <li>Branding from the school</li>
+            <li>Simple and easy to digest instructions</li>
+            <li>Clear call to action</li>
+        </ul>
+
+        <div class="row">
+            <figure>
+                <img src="../images/emailredesign.png"
+                    alt="Primavera branded email desktop version" />
+            </figure>
+            <figure>
+                <img src="../images/reenrollment email v1 (2) (1).png"
+                    alt="Primavera branded email mobile version." />
+            </figure>
+        </div>
+
+        <h4><strong>Rapid Prototyping</strong></h4>
+
+        <p>Using the design system components, I was able to create mockups of multiple versions of the guardian Primavera Online and get some quick feedback from stakeholders.</p>
+        <figure>
+            <img src="../images/abtest.png"
+                alt="slack post with two versions of the guardian dashboard" />
+        </figure>
+
+        <h4><strong>Component Design</strong></h4>
+        <p>Next we began designing the actual pages of the application. I conducted some research on best practices and trends in online forms, making sure to implement the most accessible and usable form components.</p>
+        <p>Instead of going into the details on input buttons, error states, and disabled fields, for the purpose of this case study, I will focus on an element that we did not already have in our design system - The progress bar!
+        </p>
+
+        <figure>
+            <img src="../images/Progress Trackers (1).png"
+                alt="Progress tracker design inspiration" />
+            <figcaption>I started by gathering some design inspiration for progress trackers.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="../images/progressbars.png"
+                alt="Multiple versions of progress bar mockups" />
+            <figcaption>Followed by some experimenting with our own version of the progress bar.
+            </figcaption>
+        </figure>
+
+        <p>I continued to iterate, by including the progress bar on a mockup of an application page, getting feedback as I went from other designers and Product managers.
+        </p>
+        <figure>
+            <img src="../images/progressiterations.png"
+                alt="Multiple versions of progress bar on full page mockups" />
+        </figure>
+
+        <h4><strong>Continous feedback from stakeholders helps to keep end users top of mind.</strong></h4>
+        <p>The Product Owner, Taylor, and I held weekly meetings with various members of the Primavera enrollment team throughout the process of designing both the application and the workspace. Their input into the user’s experience was crucial in ensuring the best design solutions possible within the engineering and time constraints we were given.</p>
+
+        <h4><strong>Deveopment</strong></h4>
+
+        <p>As a UX Engineer, I work directly in the code to build and maintain the design system, as well as working closely with a team of full stack developers as they implement the design.</p>
+
+        <figure>
+            <img src="../images/deployeddashboard.png"
+                alt="Screenshot of deployed dashboard" />
+            <figcaption>The deployed site was used to enroll 2024 returning students for Primavera Online.
+            </figcaption>
+        </figure>
+
+        <h4><strong>Continuing Improvements</strong></h4>
+        <p>The application was deployed and we immediately began accepting applications for re-enrolling students. We are currently preparing to implement the application for new enrollments as well and continuing to improve the experience as we go.</p>
+
+        <p>One way I’m hoping to make the enrollment process even more enjoyable is by including success messages at a few steps along the journey.</p>
+
+        <p>The idea is to tell a story about the application being the beginning of a new adventure of discovery. I held an ideation session to discuss our ideas for how to tell this story.
+        </p>
+        <figure>
+            <img src="../images/storyboard.png"
+                alt="User-flow storyboard with ideas for rocket themed journey." />
+            <figcaption>Ideation is underway for the next phase of enrollment improvements for new students in 2025.
+            </figcaption>
+        </figure>
+
+
+    </section>
+    <section class="contact">
+        <p>Want to know more? Let’s talk!</p>
+        <a href="mailto:nicole.y.osborn@gmail.com">nicole.y.osborn@gmail.com</a>
+        <a href="https://www.linkedin.com/in/nicoleyosborn/"><img id="LILogo"
+                src="../images/LI-Logo.png"
+                alt="LinkedIn Logo"></a>
+    </section>
+</body>
+
+</html>
